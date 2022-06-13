@@ -28,9 +28,10 @@ def mult_query(s,
             db='supermr_db',
             user='admin',
             password='123456'):
+    s=''.join(s).split(';')[:-1]
     with ConnectMysql(host,port,db,user,password) as m:
         for a in s:
-            m.cursor.execute(a)
+            m.cursor.execute(a+';')
             m.db.commit()
         data = m.cursor.fetchall()
     return data
