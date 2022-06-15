@@ -2,7 +2,6 @@ import wx
 from frames import *
 from connect import *
 from hashlib import sha256
-from tkinter.messagebox import showinfo
 
 #start app
 app = wx.App()
