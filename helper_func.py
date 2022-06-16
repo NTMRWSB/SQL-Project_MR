@@ -28,4 +28,8 @@ def get_input()->str:
     return popen('python read.py').readlines()[0]
 
 def get_item(col_names)->str:
-    return popen('python readItem.py '+','.join(col_names)).readlines()[0]
+    return popen('python readItem.py "'+','.join(col_names)+'"').readlines()[0]
+
+def mod_item(col_names,data)->str:
+    s='python modItem.py '+','.join(col_names)+' "'+','.join([str(x)for x in data])+'"'
+    return popen(s).readlines()[0]
