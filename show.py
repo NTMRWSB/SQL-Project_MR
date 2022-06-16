@@ -50,7 +50,7 @@ class Grid(GridFrame):
     def mod(self, event):
         wx.Yield()
         i=get_input().strip()
-        s='SELECT * FROM '+table_name+' WHERE id= '+i+';'
+        s='SELECT * FROM '+self.table_name+' WHERE id= '+i+';'
         # try:
         col=self.col_names[:-1]
         data=one_query(s)[0][:-1]
