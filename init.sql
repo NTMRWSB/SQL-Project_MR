@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS goods (
 	name VARCHAR(255) NOT NULL,
 	place_of_production VARCHAR(255) NOT NULL,
 	price FLOAT NOT NULL,
+	num INT UNSIGNED DEFAULT(0),
 	companyid INT UNSIGNED,
 	FOREIGN KEY(companyid) REFERENCES company(id),
 	userid INT UNSIGNED,
