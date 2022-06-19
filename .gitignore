@@ -96,6 +96,7 @@ $RECYCLE.BIN/
 *.dylib
 
 # Executables
+*.exe
 *.out
 *.app
 *.i*86
