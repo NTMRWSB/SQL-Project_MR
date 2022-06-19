@@ -45,7 +45,7 @@ class dashboard(MainFrame):
         table_name='company'
         show(col_names,table_name)
     def goods_click(self, event):
-        col_names=('id','name','place_of_production','price','companyid','userid','add_time')
+        col_names=('id','name','place_of_production','price','num','companyid','userid','add_time')
         table_name='goods'
         show(col_names,table_name)
     def orders_click(self, event):
